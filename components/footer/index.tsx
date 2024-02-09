@@ -1,7 +1,7 @@
 const footer = () =>{
     return (
       <>
-        <section className="flex flex-col items-center justify-start px-[0.69rem] box-border gap-[0.69rem] max-w-full text-left text-[1.75rem] text-darkslategray-200 w-full">
+        <section className="flex flex-col items-center justify-start box-border max-w-full text-left text-[1.75rem] text-darkslategray-200 w-full">
         <div className="bg-primary-blue flex flex-row items-start justify-start pt-[2.94rem] pb-[1.88rem] pr-[3.31rem] pl-[5.25rem] box-border relative gap-[3.31rem] max-w-full mq750:gap-[1.63rem] mq750:pl-[1.31rem] mq750:box-border mq1225:flex-wrap mq1225:pl-[2.63rem] mq1225:pr-[1.63rem] mq1225:box-border w-full" >
           <div className="w-full absolute my-0 mx-[!important] h-full top-[0rem] right-[0rem] bottom-[0rem] left-[0rem] bg-gainsboro-300 mix-blend-darken" />
           <div className="w-[18.88rem] flex flex-col items-center justify-start gap-[2.19rem]">
