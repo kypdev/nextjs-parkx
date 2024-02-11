@@ -63,7 +63,7 @@ export default function Home({ params: { lng } }: { params: { lng: string } }) {
               </Button>
             </div>
           </div>
-        O</div>
+        </div>
       </div>
     </>
   )
