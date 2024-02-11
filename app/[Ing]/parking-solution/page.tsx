@@ -3,6 +3,7 @@ import React from 'react'
 import { Breadcrumb, Space, Typography } from 'antd'
 import Image from 'next/image'
 import { Banner } from '@/components'
+import Location from '@/components/pages/parking/Location'
 const { Title, Text } = Typography
 
 const itemBreadcrumb = [
@@ -36,9 +37,8 @@ const page = () => {
         />
       </Space>
       <Title level={3}>LOCATIONS</Title>
-      {bannerList.map((image) => (
-        <Banner key={image.id} imageSrc={image.url} />
-      ))}
+      <Location />
+      <Banner imageSrc={bannerList[0].url} />
     </>
   )
 }

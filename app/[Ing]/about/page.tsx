@@ -2,6 +2,7 @@
 import { Breadcrumb, Space, Typography } from 'antd'
 import React from 'react'
 import Image from 'next/image'
+
 const { Title, Text } = Typography
 
 const itemBreadcrumb = [
