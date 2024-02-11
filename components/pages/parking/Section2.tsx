@@ -11,34 +11,10 @@ const locations = [
   '/images/parking/location3.png',
 ]
 
-const Location = () => {
+function Section2() {
   return (
     <>
-      <div className='flex flex-row w-8/12 justify-between px-32'>
-        <Button className='bg-primary-green text-white' shape='round'>
-          EKAMAI
-        </Button>
-        <Button className='bg-primary-green text-white' shape='round'>
-          UDOMSUK
-        </Button>
-        <Button className='bg-disable text-white' shape='round'>
-          OTHERS
-        </Button>
-        <Button className='bg-disable text-white' shape='round'>
-          OTHERS
-        </Button>
-      </div>
       <div className='flex flex-row w-8/12 justify-between px-0'>
-        <div className='w-2/5'>
-          <Carousel useKeyboardArrows={true} showThumbs={false}>
-            {locations.map((URL, index) => (
-              <div key={index} className='slide'>
-                <img alt='sample_file' src={URL} key={index} />
-              </div>
-            ))}
-          </Carousel>
-        </div>
-        <div className='bg-primary-green w-1 mx-10'></div>
         <div className=''>
           <div className='pr-50 text-lg'>
             <Text className='text-xl font-bold'>PARK X EKKAMAI</Text>
@@ -72,11 +48,19 @@ const Location = () => {
             </ul>
           </div>
         </div>
+        <div className='bg-primary-green w-1 mx-10'></div>
+        <div className='w-2/5'>
+          <Carousel useKeyboardArrows={true} showThumbs={false}>
+            {locations.map((URL, index) => (
+              <div key={index} className='slide'>
+                <img alt='sample_file' src={URL} key={index} />
+              </div>
+            ))}
+          </Carousel>
+        </div>
       </div>
-
-
     </>
   )
 }
 
-export default Location
+export default Section2
