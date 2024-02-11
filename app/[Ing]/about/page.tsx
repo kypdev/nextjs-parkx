@@ -1,11 +1,10 @@
 'use client'
-import { Breadcrumb, Space } from 'antd'
+import { Breadcrumb, Space, Typography } from 'antd'
 import React from 'react'
 import Image from 'next/image'
-import { Typography } from 'antd'
 const { Title, Text } = Typography
 
-const itemBreadcrumb: {}[] = [
+const itemBreadcrumb = [
   {
     title: 'Home',
   },

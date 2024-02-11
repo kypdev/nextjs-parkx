@@ -20,7 +20,7 @@ const Menubar = () => {
             </div>
             <div className='flex-[0.9412] flex flex-col items-start justify-start py-[0rem] pr-[0.75rem] pl-[0rem]'>
               <div className='h-[1.88rem] relative font-semibold inline-block whitespace-nowrap'>
-                PARKING SOLUTIONS
+                <Link href={'/parking-solution'}>PARKING SOLUTIONS</Link>
               </div>
             </div>
             <div className='h-[1.88rem] flex-1 relative font-semibold inline-block whitespace-nowrap'>{`NEWS & PROMOTIONS`}</div>
