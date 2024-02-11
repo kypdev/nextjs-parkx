@@ -2,9 +2,9 @@
 import React from 'react'
 import { Breadcrumb, Space, Typography } from 'antd'
 import Image from 'next/image'
-import { Banner } from '@/components'
 import Location from '@/components/pages/parking/Location'
 import Section2 from '@/components/pages/parking/Section2'
+import Banner from '@/components/banner'
 const { Title, Text } = Typography
 
 const itemBreadcrumb = [
