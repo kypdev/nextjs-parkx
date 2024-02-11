@@ -2,12 +2,10 @@
 import { Trans } from 'react-i18next/TransWithoutContext'
 import { languages, fallbackLng } from '../i18n/settings'
 import { useTranslation } from '../i18n'
-import { useEffect, useState } from 'react'
-import Image from 'next/image'
 import { Carousel } from 'react-responsive-carousel'
 import 'react-responsive-carousel/lib/styles/carousel.min.css'
 import { Button, Flex, Input, Typography } from 'antd'
-import { OurLocation } from '@/components'
+import OurLocation from '@/components/OurLocation'
 const { Title, Text } = Typography
 
 const images = ['/images/main.png', '/images/main.png', '/images/main.png']
@@ -15,10 +13,6 @@ const images = ['/images/main.png', '/images/main.png', '/images/main.png']
 export default function Home({ params: { lng } }: { params: { lng: string } }) {
   if (languages.indexOf(lng) < 0) lng = fallbackLng
   // const { t } = await useTranslation(lng)
-  const [padding, setPadding] = useState(false)
-  useEffect(() => {
-    setPadding(true)
-  }, [padding])
 
   return (
     <>
