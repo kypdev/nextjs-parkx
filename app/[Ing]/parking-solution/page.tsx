@@ -15,9 +15,9 @@ const itemBreadcrumb = [
 ]
 
 const bannerList = [
-  '/images/parking/banner1.png',
-  '/images/parking/banner2.png',
-  '/images/parking/banner3.png',
+  {id: 1, url: '/images/parking/banner1.png'},
+  {id: 2, url: '/images/parking/banner2.png'},
+  {id: 3, url: '/images/parking/banner3.png'},
 ]
 
 const page = () => {
@@ -37,7 +37,7 @@ const page = () => {
       </Space>
       <Title level={3}>LOCATIONS</Title>
       {bannerList.map((image) => (
-        <Banner imageSrc={image} />
+        <Banner key={image.id} imageSrc={image.url} />
       ))}
     </>
   )
