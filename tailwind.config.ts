@@ -13,7 +13,6 @@ const config = {
       colors: {
         'primary-blue': '#1C355E',
         'primary-green': '#7FBC00',
-        'white': '#FFFFFF',
         'secondary-blue': '#343434',
         'secondary-gray': '#E9E9E9',
       },

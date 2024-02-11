@@ -7,6 +7,7 @@ import Image from 'next/image'
 import { Carousel } from 'react-responsive-carousel'
 import 'react-responsive-carousel/lib/styles/carousel.min.css'
 import { Button, Flex, Input, Typography } from 'antd'
+import { OurLocation } from '@/components'
 const { Title, Text } = Typography
 
 const images = ['/images/main.png', '/images/main.png', '/images/main.png']
@@ -29,7 +30,7 @@ export default function Home({ params: { lng } }: { params: { lng: string } }) {
             </div>
           ))}
         </Carousel>
-        <div className=' bg-primary-green px-10 py-10 my-10'>main content</div>
+        <OurLocation />
         <div className='flex flex-row  bg-primary-green px-40 py-10  my-10 justify-between'>
           <div className='flex flex-col'>
             <h1 className='text-4xl font-bold text-white'>สมัครสมาชิก</h1>
@@ -62,7 +63,7 @@ export default function Home({ params: { lng } }: { params: { lng: string } }) {
               </Button>
             </div>
           </div>
-        </div>
+        O</div>
       </div>
     </>
   )

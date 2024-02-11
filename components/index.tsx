@@ -1,3 +1,4 @@
 import Banner from './banner'
+import OurLocation from './OurLocation'
 
-export { Banner }
+export { Banner, OurLocation }
